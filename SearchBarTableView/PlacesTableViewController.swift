@@ -8,11 +8,12 @@
 
 import UIKit
 
-class PlacesTableViewController: UITableViewController {
+class PlacesTableViewController: UITableViewController, UISearchResultsUpdating {
 
     // MARK: - view did load
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadSearchBar()
     }
 
 
@@ -23,15 +24,47 @@ class PlacesTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return model.featuredPosters.count
+        if searchController.isActive == true {
+            return searchResults.count
+        } else {
+            return model.featuredPosters.count
+        }
+        
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "placesCell", for: indexPath)
-        cell.textLabel?.text = model.featuredPosters[indexPath.row]["description"]
+        
+        if searchController.isActive == true {
+            cell.textLabel?.text = searchResults[indexPath.row]["description"] as? String
+        } else {
+            cell.textLabel?.text = model.featuredPosters[indexPath.row]["description"]
+        }
+        
+        
         return cell
     }
     
+    // MARK: - search controller
+    let searchController = UISearchController(searchResultsController: nil)
+    var searchResults = [AnyObject]()
+    
+    // MARK: UISearchResultsUpdating protocol
+    func loadSearchBar() {
+        searchController.searchResultsUpdater = self
+        tableView.tableHeaderView = searchController.searchBar
+        self.definesPresentationContext = false
+        searchController.dimsBackgroundDuringPresentation = false
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        let predicate = NSPredicate(format: "description contains[cd] %@", searchController.searchBar.text!)
+        let filteredResults = (model.featuredPosters as NSArray).filtered(using: predicate)
+        
+        searchResults = filteredResults as [AnyObject]
+        tableView.reloadData()
+    }
 
+    
 }
