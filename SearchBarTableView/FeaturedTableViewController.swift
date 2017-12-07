@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainTableViewController: UITableViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class FeaturedTableViewController: UITableViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     // MARK: - view did load
     override func viewDidLoad() {
