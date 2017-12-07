@@ -13,7 +13,7 @@ class PlacesTableViewController: UITableViewController, UISearchResultsUpdating 
     // MARK: - view did load
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadSearchBar()
+        //loadSearchBar()
     }
 
 

@@ -13,6 +13,7 @@
 		5C500E811FD8783000C9F312 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C500E7F1FD8783000C9F312 /* LaunchScreen.storyboard */; };
 		5C500E891FD878AE00C9F312 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C500E881FD878AE00C9F312 /* PlacesTableViewController.swift */; };
 		5C500E8B1FD8796D00C9F312 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C500E8A1FD8796D00C9F312 /* Model.swift */; };
+		5C500E8F1FD916E400C9F312 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C500E8E1FD916E400C9F312 /* MainTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5C500E821FD8783000C9F312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C500E881FD878AE00C9F312 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
 		5C500E8A1FD8796D00C9F312 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		5C500E8E1FD916E400C9F312 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				5C500E761FD8783000C9F312 /* AppDelegate.swift */,
 				5C500E8A1FD8796D00C9F312 /* Model.swift */,
+				5C500E8E1FD916E400C9F312 /* MainTableViewController.swift */,
 				5C500E881FD878AE00C9F312 /* PlacesTableViewController.swift */,
 				5C500E7A1FD8783000C9F312 /* Main.storyboard */,
 				5C500E7D1FD8783000C9F312 /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C500E8F1FD916E400C9F312 /* MainTableViewController.swift in Sources */,
 				5C500E8B1FD8796D00C9F312 /* Model.swift in Sources */,
 				5C500E771FD8783000C9F312 /* AppDelegate.swift in Sources */,
 				5C500E891FD878AE00C9F312 /* PlacesTableViewController.swift in Sources */,
@@ -309,6 +313,7 @@
 				5C500E871FD8783100C9F312 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
