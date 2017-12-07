@@ -10,26 +10,31 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    // MARK: - view did load
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        chartsView.isHidden = true
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // MARK: - outlets
+    
+    @IBOutlet weak var featuredView: UIView!
+    @IBOutlet weak var chartsView: UIView!
+    
+    
+    
+    
+    
+    // MARK: - interactions
+    
+    @IBAction func tapSegmentedControl(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            featuredView.isHidden = false
+            chartsView.isHidden = true
+        } else {
+            featuredView.isHidden = true
+            chartsView.isHidden = false
+        }
     }
-    */
-
+    
 }

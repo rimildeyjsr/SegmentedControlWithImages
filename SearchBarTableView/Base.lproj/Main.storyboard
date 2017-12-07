@@ -195,7 +195,7 @@
         <!--Main View Controller-->
         <scene sceneID="Dhv-Yx-V1e">
             <objects>
-                <viewController id="Pzc-Up-7h2" customClass="MainViewController" customModule="SearchBarTableView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Pzc-Up-7h2" customClass="MainViewController" customModule="SearchBarTableView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8go-5L-ht2"/>
                         <viewControllerLayoutGuide type="bottom" id="qcX-Kw-MHO"/>
@@ -239,9 +239,16 @@
                                 <segment title="Featured"/>
                                 <segment title="Charts"/>
                             </segments>
+                            <connections>
+                                <action selector="tapSegmentedControl:" destination="Pzc-Up-7h2" eventType="valueChanged" id="4gN-gB-Gc5"/>
+                            </connections>
                         </segmentedControl>
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="JT8-Xf-CA0"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="chartsView" destination="14c-Fh-CUX" id="ONY-R8-eSH"/>
+                        <outlet property="featuredView" destination="gAx-q4-Ska" id="lgh-ko-U5A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="deO-cP-kqM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -256,7 +263,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="czd-5q-YaX" customClass="ChartsTableViewCell" customModule="SearchBarTableView" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="chartsCell" id="czd-5q-YaX" customClass="ChartsTableViewCell" customModule="SearchBarTableView" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="czd-5q-YaX" id="rQN-pB-zKn">
@@ -313,6 +320,13 @@
                                         <constraint firstItem="2vI-xR-VUl" firstAttribute="leading" secondItem="rQN-pB-zKn" secondAttribute="leadingMargin" id="oc7-1C-xcb"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="ZRf-4w-s9d" id="Ku2-We-vjv"/>
+                                    <outlet property="numberLabel" destination="rAz-Gi-6qM" id="Pj5-y9-liA"/>
+                                    <outlet property="posterImageView" destination="9xn-vI-dFj" id="FqH-vg-A9U"/>
+                                    <outlet property="ratingsLabel" destination="tjY-HQ-X3d" id="RqF-K5-TwK"/>
+                                    <outlet property="titleLabel" destination="Fl2-N2-eBp" id="aD8-HM-3dI"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
