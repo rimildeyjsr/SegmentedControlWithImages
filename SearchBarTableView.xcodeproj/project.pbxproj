@@ -11,9 +11,11 @@
 		5C500E7C1FD8783000C9F312 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C500E7A1FD8783000C9F312 /* Main.storyboard */; };
 		5C500E7E1FD8783000C9F312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C500E7D1FD8783000C9F312 /* Assets.xcassets */; };
 		5C500E811FD8783000C9F312 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C500E7F1FD8783000C9F312 /* LaunchScreen.storyboard */; };
-		5C500E891FD878AE00C9F312 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C500E881FD878AE00C9F312 /* PlacesTableViewController.swift */; };
 		5C500E8B1FD8796D00C9F312 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C500E8A1FD8796D00C9F312 /* Model.swift */; };
 		5C500E8F1FD916E400C9F312 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C500E8E1FD916E400C9F312 /* MainTableViewController.swift */; };
+		5C500E911FD952ED00C9F312 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C500E901FD952ED00C9F312 /* BannerCollectionViewCell.swift */; };
+		5C500E931FD9A20100C9F312 /* PosterCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C500E921FD9A20100C9F312 /* PosterCollectionViewController.swift */; };
+		5C500E951FD9A21900C9F312 /* PosterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C500E941FD9A21900C9F312 /* PosterCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,9 +25,11 @@
 		5C500E7D1FD8783000C9F312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C500E801FD8783000C9F312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C500E821FD8783000C9F312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C500E881FD878AE00C9F312 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
 		5C500E8A1FD8796D00C9F312 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		5C500E8E1FD916E400C9F312 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		5C500E901FD952ED00C9F312 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		5C500E921FD9A20100C9F312 /* PosterCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PosterCollectionViewController.swift; sourceTree = "<group>"; };
+		5C500E941FD9A21900C9F312 /* PosterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PosterCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +65,9 @@
 				5C500E761FD8783000C9F312 /* AppDelegate.swift */,
 				5C500E8A1FD8796D00C9F312 /* Model.swift */,
 				5C500E8E1FD916E400C9F312 /* MainTableViewController.swift */,
-				5C500E881FD878AE00C9F312 /* PlacesTableViewController.swift */,
+				5C500E901FD952ED00C9F312 /* BannerCollectionViewCell.swift */,
+				5C500E921FD9A20100C9F312 /* PosterCollectionViewController.swift */,
+				5C500E941FD9A21900C9F312 /* PosterCollectionViewCell.swift */,
 				5C500E7A1FD8783000C9F312 /* Main.storyboard */,
 				5C500E7D1FD8783000C9F312 /* Assets.xcassets */,
 				5C500E7F1FD8783000C9F312 /* LaunchScreen.storyboard */,
@@ -145,7 +151,9 @@
 				5C500E8F1FD916E400C9F312 /* MainTableViewController.swift in Sources */,
 				5C500E8B1FD8796D00C9F312 /* Model.swift in Sources */,
 				5C500E771FD8783000C9F312 /* AppDelegate.swift in Sources */,
-				5C500E891FD878AE00C9F312 /* PlacesTableViewController.swift in Sources */,
+				5C500E951FD9A21900C9F312 /* PosterCollectionViewCell.swift in Sources */,
+				5C500E931FD9A20100C9F312 /* PosterCollectionViewController.swift in Sources */,
+				5C500E911FD952ED00C9F312 /* BannerCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

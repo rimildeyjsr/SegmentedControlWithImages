@@ -9,5 +9,8 @@
 import UIKit
 
 class BannerCollectionViewCell: UICollectionViewCell {
+    // MARK: - outlets
+    
+    @IBOutlet weak var imageView: UIImageView!
     
 }
